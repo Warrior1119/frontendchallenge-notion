@@ -1,0 +1,15 @@
+
+.checkbox {
+  cursor: pointer;
+
+  &.disabled {
+    cursor: initial;
+  }
+}
+
+.input {
+  display: none;
+  &:focus {
+    border: 1px solid #000;
+  }
+}

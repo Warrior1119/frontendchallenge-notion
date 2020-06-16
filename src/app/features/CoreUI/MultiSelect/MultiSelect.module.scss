@@ -1,0 +1,15 @@
+@import '../variables';
+
+.menu {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.menuItem {
+  padding: 15px;
+  border-bottom: 1px solid #dfe6f1;
+  &:last-child {
+    border-bottom: none;
+  }
+}

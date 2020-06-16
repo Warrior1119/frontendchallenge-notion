@@ -1,0 +1,97 @@
+@import '../variables';
+
+.wrapper {
+  background: #fff;
+
+  position: relative;
+  box-sizing: border-box;
+  outline: none;
+  width: 224.408px;
+  
+}
+
+.input {
+  height: 48px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $gray-800;
+  background: $white;
+  border: 1px solid #dfe6f1;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.1s;
+  padding: 15px 18px;
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:focus {
+    border-color: $blue-600;
+  }
+
+  &:hover {
+    border-color: $blue-600;
+  }
+
+
+  &.disabled {
+    color: $gray-400;
+    background-color: $gray-100;
+    border-color: $gray-200;
+    cursor: inherit;
+    /* fix safari & ios */
+    -webkit-text-fill-color: $gray-400;
+    opacity: 1;
+  }
+}
+
+.fillWidth {
+  width: 100%;
+}
+
+.label {
+  color: $gray-800;
+  white-space: nowrap ;
+  overflow: hidden;
+  display: inline-block;
+  width: calc(100% - 10px);
+  overflow: hidden;;
+}
+
+.arrow {
+  color: $gray-800;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  &.expanded {
+    top: 20px;
+    transform: scaleY(-1);
+  }
+}
+
+.panel {
+  border: 1px solid #dfe6f1;
+  border-radius: 4px;
+  color: $gray-800;
+  background: $white;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  box-sizing: border-box;
+  margin-top: 1px;
+  max-height: 1000px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+
+  outline: none;
+  transition: all 0.1s;
+
+}
+
+.fillWidth {
+  width: 100%;    
+}
